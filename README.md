@@ -11,7 +11,7 @@ open browser to http://localhost:3000 to view app.
 Front-end is running on port 3000 with Rails backend running on port 3001
 
 
-# Coding Challenge questions our located in /codingQuestions 
+# Coding Challenge questions are located in /codingQuestions 
 
 
 
