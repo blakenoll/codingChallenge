@@ -1,24 +1,12 @@
-# README
+# Start up
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+to start the React front-end and Rails backend simply run 
 
-Things you may want to cover:
+```bash
+yarn start
+```
 
-* Ruby version
+# Coding Challenge questions our located in /codingQuestions 
 
-* System dependencies
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

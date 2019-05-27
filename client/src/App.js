@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Loader from "./components/loader";
 import HomePage from "./components/homePage";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import NotFound from "./components/NotFound";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import UserPage from "./components/userPage";
 
 function App() {
@@ -22,8 +23,11 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Route path="/" exact component={HomePage} />
-        <Route path="/:username" exact component={UserPage} />
+        <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/user/:username" component={UserPage} />
+          <Route component={NotFound} />
+        </Switch>
       </Router>
     </div>
   );

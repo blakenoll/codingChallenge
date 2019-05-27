@@ -3,6 +3,10 @@ require 'twitter'
 class ApplicationController < ActionController::API
   before_action :set_api_client
 
+  def fallback_index_html
+    render :file => 'public/index.html'
+  end
+
   private
 
   def set_api_client

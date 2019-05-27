@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const LoadedUserModal = ({ className, user, username }) => (
   <div className={className}>
-    <Link to={`${username}`}>{username}</Link>
+    <Link to={`/user/${username}`}>{username}</Link>
     <div className="modal">
       <img src={user.profile_image_url} alt={username} />
       <h2>{user.screen_name}</h2>
